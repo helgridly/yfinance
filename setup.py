@@ -50,6 +50,7 @@ setup(
     platforms=['any'],
     keywords='pandas, yahoo finance, pandas datareader',
     packages=find_packages(exclude=['contrib', 'docs', 'tests', 'examples']),
+    setup_requires = ['wheel'],
     install_requires=['pandas>=0.24', 'numpy>=1.15',
                       'requests>=2.20', 'multitasking>=0.0.7',
                       'lxml>=4.5.1', 'BeautifulSoup4>=4.6.0',
