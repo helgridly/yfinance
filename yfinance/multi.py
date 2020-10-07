@@ -114,6 +114,7 @@ def download(tickers, start=None, end=None, actions=False, threads=True,
         # print(shared._ERRORS)
         print("\n".join(['- %s: %s' %
                          v for v in list(shared._ERRORS.items())]))
+        return None
 
     if len(tickers) == 1:
         return shared._DFS[tickers[0]]
